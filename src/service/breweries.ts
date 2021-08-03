@@ -23,9 +23,8 @@ export const getBreweries = (): Promise<[]> => {
         const content = buffer.toString();
         resolve(JSON.parse(content));
       } catch {
-        // File not found, load and then save
+        // File not found
         httpGet(options).then((response: string) => {
-          // Save cache
           createCache(response);
           const content = JSON.parse(response)
           resolve(content);
@@ -36,12 +35,8 @@ export const getBreweries = (): Promise<[]> => {
       }
     });
   }
-  
-  //
-  // Create a local file containing
-  // the cache of the breweries
-  //
-  const createCache = (content: string) => {
+ 
+export const createCache = (content: string) => {
     fs.writeFile('data/breweries.json', content, function (err) {
       if (err) return console.log(err);
       console.log('File created successfully');

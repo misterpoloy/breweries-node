@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getBreweries = void 0;
+exports.createCache = exports.getBreweries = void 0;
 const fs_1 = __importDefault(require("fs"));
 const utils_1 = require("../utils");
 const dataSource_1 = __importDefault(require("../config/dataSource"));
@@ -28,10 +28,9 @@ const getBreweries = () => {
             resolve(JSON.parse(content));
         }
         catch (_a) {
-            // File not found, load and then save
+            // File not found
             utils_1.httpGet(options).then((response) => {
-                // Save cache
-                createCache(response);
+                exports.createCache(response);
                 const content = JSON.parse(response);
                 resolve(content);
             })
@@ -42,10 +41,6 @@ const getBreweries = () => {
     });
 };
 exports.getBreweries = getBreweries;
-//
-// Create a local file containing
-// the cache of the breweries
-//
 const createCache = (content) => {
     fs_1.default.writeFile('data/breweries.json', content, function (err) {
         if (err)
@@ -53,3 +48,4 @@ const createCache = (content) => {
         console.log('File created successfully');
     });
 };
+exports.createCache = createCache;

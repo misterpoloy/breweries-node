@@ -1,0 +1,257 @@
+{
+    "Alaska": {
+       "State Code": "AK",
+       "Region": "West",
+       "Division": "Pacific"
+    },
+    "Alabama": {
+       "State Code": "AL",
+       "Region": "South",
+       "Division": "East South Central"
+    },
+    "Arkansas": {
+       "State Code": "AR",
+       "Region": "South",
+       "Division": "West South Central"
+    },
+    "Arizona": {
+       "State Code": "AZ",
+       "Region": "West",
+       "Division": "Mountain"
+    },
+    "California": {
+       "State Code": "CA",
+       "Region": "West",
+       "Division": "Pacific"
+    },
+    "Colorado": {
+       "State Code": "CO",
+       "Region": "West",
+       "Division": "Mountain"
+    },
+    "Connecticut": {
+       "State Code": "CT",
+       "Region": "Northeast",
+       "Division": "New England"
+    },
+    "District of Columbia": {
+       "State Code": "DC",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "Delaware": {
+       "State Code": "DE",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "Florida": {
+       "State Code": "FL",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "Georgia": {
+       "State Code": "GA",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "Hawaii": {
+       "State Code": "HI",
+       "Region": "West",
+       "Division": "Pacific"
+    },
+    "Iowa": {
+       "State Code": "IA",
+       "Region": "Midwest",
+       "Division": "West North Central"
+    },
+    "Idaho": {
+       "State Code": "ID",
+       "Region": "West",
+       "Division": "Mountain"
+    },
+    "Illinois": {
+       "State Code": "IL",
+       "Region": "Midwest",
+       "Division": "East North Central"
+    },
+    "Indiana": {
+       "State Code": "IN",
+       "Region": "Midwest",
+       "Division": "East North Central"
+    },
+    "Kansas": {
+       "State Code": "KS",
+       "Region": "Midwest",
+       "Division": "West North Central"
+    },
+    "Kentucky": {
+       "State Code": "KY",
+       "Region": "South",
+       "Division": "East South Central"
+    },
+    "Louisiana": {
+       "State Code": "LA",
+       "Region": "South",
+       "Division": "West South Central"
+    },
+    "Massachusetts": {
+       "State Code": "MA",
+       "Region": "Northeast",
+       "Division": "New England"
+    },
+    "Maryland": {
+       "State Code": "MD",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "Maine": {
+       "State Code": "ME",
+       "Region": "Northeast",
+       "Division": "New England"
+    },
+    "Michigan": {
+       "State Code": "MI",
+       "Region": "Midwest",
+       "Division": "East North Central"
+    },
+    "Minnesota": {
+       "State Code": "MN",
+       "Region": "Midwest",
+       "Division": "West North Central"
+    },
+    "Missouri": {
+       "State Code": "MO",
+       "Region": "Midwest",
+       "Division": "West North Central"
+    },
+    "Mississippi": {
+       "State Code": "MS",
+       "Region": "South",
+       "Division": "East South Central"
+    },
+    "Montana": {
+       "State Code": "MT",
+       "Region": "West",
+       "Division": "Mountain"
+    },
+    "North Carolina": {
+       "State Code": "NC",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "North Dakota": {
+       "State Code": "ND",
+       "Region": "Midwest",
+       "Division": "West North Central"
+    },
+    "Nebraska": {
+       "State Code": "NE",
+       "Region": "Midwest",
+       "Division": "West North Central"
+    },
+    "New Hampshire": {
+       "State Code": "NH",
+       "Region": "Northeast",
+       "Division": "New England"
+    },
+    "New Jersey": {
+       "State Code": "NJ",
+       "Region": "Northeast",
+       "Division": "Middle Atlantic"
+    },
+    "New Mexico": {
+       "State Code": "NM",
+       "Region": "West",
+       "Division": "Mountain"
+    },
+    "Nevada": {
+       "State Code": "NV",
+       "Region": "West",
+       "Division": "Mountain"
+    },
+    "New York": {
+       "State Code": "NY",
+       "Region": "Northeast",
+       "Division": "Middle Atlantic"
+    },
+    "Ohio": {
+       "State Code": "OH",
+       "Region": "Midwest",
+       "Division": "East North Central"
+    },
+    "Oklahoma": {
+       "State Code": "OK",
+       "Region": "South",
+       "Division": "West South Central"
+    },
+    "Oregon": {
+       "State Code": "OR",
+       "Region": "West",
+       "Division": "Pacific"
+    },
+    "Pennsylvania": {
+       "State Code": "PA",
+       "Region": "Northeast",
+       "Division": "Middle Atlantic"
+    },
+    "Rhode Island": {
+       "State Code": "RI",
+       "Region": "Northeast",
+       "Division": "New England"
+    },
+    "South Carolina": {
+       "State Code": "SC",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "South Dakota": {
+       "State Code": "SD",
+       "Region": "Midwest",
+       "Division": "West North Central"
+    },
+    "Tennessee": {
+       "State Code": "TN",
+       "Region": "South",
+       "Division": "East South Central"
+    },
+    "Texas": {
+       "State Code": "TX",
+       "Region": "South",
+       "Division": "West South Central"
+    },
+    "Utah": {
+       "State Code": "UT",
+       "Region": "West",
+       "Division": "Mountain"
+    },
+    "Virginia": {
+       "State Code": "VA",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "Vermont": {
+       "State Code": "VT",
+       "Region": "Northeast",
+       "Division": "New England"
+    },
+    "Washington": {
+       "State Code": "WA",
+       "Region": "West",
+       "Division": "Pacific"
+    },
+    "Wisconsin": {
+       "State Code": "WI",
+       "Region": "Midwest",
+       "Division": "East North Central"
+    },
+    "West Virginia": {
+       "State Code": "WV",
+       "Region": "South",
+       "Division": "South Atlantic"
+    },
+    "Wyoming": {
+       "State Code": "WY",
+       "Region": "West",
+       "Division": "Mountain"
+    }
+ }

@@ -11,15 +11,21 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.breweries = void 0;
 const breweries_1 = require("./../service/breweries");
+const utils_1 = require("./../utils");
 const breweries = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // EXTRACT
     const breweriesData = yield breweries_1.getBreweries();
     // TRANSFORM
-    // Step 1) Remove any attributes that are null from the data
-    // Step 2) Convert the keys of the objects in the response from snake case to camel case
-    // Step 3) Group the breweries together by state and then sort them by created_at
-    // Step 4) Add an attribute to each brewery called region that adds the correct region to each brewery based on map
+    const parsedDataSource = breweriesData
+        .map(utils_1.removeEmptyAtt) // Step 1) Remove any attributes that are null
+        .map(utils_1.transforToCamelCase) // Step 2) Convert the keys from snake case to camell case
+        .sort(utils_1.sortByCreatedDate) // Step 3.A)  Sort them by created_at
+        .filter(utils_1.filterLatLong); // Step 4.A) If does not have a longitude & latitude then filter it out.
+    // Missing: 3.B Group the breweries together by state
+    // Missing: 4.B Add an attribute to each brewery called region
+    // const regionGroup = await getRegionsGroup()
+    // dataSource.map(addRegion).map(groupByState)
     // LOAD
-    return res.json({ msg: `Hey ${req.body.email}, breweries!` });
+    return res.json({ data: parsedDataSource });
 });
 exports.breweries = breweries;
