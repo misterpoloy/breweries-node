@@ -42,3 +42,14 @@ export const createCache = (content: string) => {
       console.log('File created successfully');
     });
   }
+
+export const getRegions = () => {
+    try {
+      const buffer = fs.readFileSync("data/usRegions.json");
+      const content = buffer.toString();
+      return JSON.parse(content);
+    } catch (err) {
+      console.log("Error while reading reagions", err);
+      return [];
+    }
+  }

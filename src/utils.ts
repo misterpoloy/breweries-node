@@ -1,5 +1,6 @@
 import https from 'https';
-import { Brewery } from './models/brewery';
+import { Brewery } from './types/brewery';
+import { getRegions } from './service/breweries'
 
 export const httpGet = (options) => {
     let output = [];
@@ -19,6 +20,20 @@ export const httpGet = (options) => {
           req.end();
     });
   };
+
+  export const addRegion = (brewery: Brewery) => {
+    brewery.region = getRegions()[brewery.state].Region;
+    return brewery;
+  }
+
+  export const groupByState = (breweries: Array<Brewery>) => {
+    const stateFormat = {};
+    breweries.forEach(brewery => {
+      if (!stateFormat[brewery.state]) stateFormat[brewery.state] = [];
+      stateFormat[brewery.state].push(brewery);
+    });
+    return stateFormat;
+  }
 
   export const transforToCamelCase = (brewery: Brewery) => {
     const parsedBrewery = {};
@@ -51,7 +66,10 @@ export const httpGet = (options) => {
     let parsedWord = words[0];
     for (let i = 1; i < words.length; i++) {
       const word = words[i];
-      parsedWord += word.charAt(0).toUpperCase() + word.slice(1);
+      const firstLetter = word.charAt(0);
+      // Prevent crash on street_2 number format
+      const newFirstLetter = isNaN(Number(firstLetter)) ? firstLetter.toUpperCase() : word.charAt(0).toString();
+      parsedWord += newFirstLetter + word.slice(1);
     }
     return parsedWord;
   }
