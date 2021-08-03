@@ -4,6 +4,12 @@
 # Dependency directory
 node_modules
 
+# Build
+dist
+
+# Cache
+data/breweries.json
+
 # Editors
 .idea
 .vscode
