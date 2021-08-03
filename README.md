@@ -1,4 +1,4 @@
-# Brewerie 🍺:
+# Breweries 🍺:
 REST API Project using Typescript and Express JS
 
 - Stack
